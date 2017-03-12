@@ -1,0 +1,316 @@
+// colours
+$primary-dark:   #1976d2;
+$primary:        #2196f3;
+$primary-light:  #bbdefb;
+$white:             #fff;
+$accent:         #ff5252;
+$primary-text:   #212121;
+$secondary-text: #757575;
+$divider:        #bdbdbd;
+$green:          #4caf50;
+
+// breakpoints
+
+$small: '768px';
+$large: '1200px';
+$xlarge: '1600px';
+
+@mixin clear-fix {
+    &::before,
+    &::after {
+        content: " ";
+        display: table;
+    }
+
+    &::after {
+        clear: both;
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    color: $white;
+    font-size: 18px;
+    line-height: 1.4;
+
+    @media (min-width: $small) {
+        font-size: 21px;
+    }
+
+    @media (min-width: $large) {
+        font-size: 24px;
+    }
+
+    @media (min-width: $xlarge) {
+        font-size: 27px;
+    }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $primary;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+a {
+    color: $primary;
+    text-decoration: none;
+
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+a,
+button,
+.form-control,
+.form-label,
+.form-note {
+    transition: all .3s ease-in-out;
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
+    padding: 0 2rem;
+    color: $white;
+    line-height: 2;
+    border: 0;
+    border-radius: 2px;
+    background-color: $accent;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+
+    &:hover,
+    &:focus {
+        background-color: lighten($accent, 4);
+        outline: none;
+        text-decoration: none;
+    }
+
+    &[disabled] {
+        background-color: $primary-text !important;
+    }
+
+    &.correct {
+        background-color: $green !important;
+    }
+
+    & + & {
+        margin-top: 1rem;
+    }
+}
+
+.container {
+    height: 100%;
+    max-width: 35rem;
+    margin: 0 auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 0;
+    white-space: nowrap;
+
+    &::before {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        content: '';
+    }
+}
+
+.form {
+    height: 100%;
+}
+
+.slide {
+    display: none;
+    font-size: 1rem;
+    vertical-align: middle;
+    white-space: normal;
+
+    &.active {
+        display: inline-block;
+    }
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+
+    &.in {
+        opacity: 1;
+    }
+}
+
+.clearfix {
+    *zoom: 1;
+
+    &::before,
+    &::after {
+        content: " ";
+        display: table;
+    }
+
+    &::after {
+        clear: both;
+    }
+}
+
+
+.form {
+    &-group {
+        position: relative;
+        text-align: left;
+
+        & + & {
+            margin-top: 1rem;
+        }
+    }
+
+    &-control {
+        display: block;
+        width: 100%;
+        height: 3rem;
+        padding: 0;
+        font-size: 1rem;
+        line-height: normal;
+        border-top: 0;
+        border-right: 0;
+        //border-bottom: 1px solid $grey;
+        border-left: 0;
+        border-radius: 0;
+        background: none;
+
+        &:focus,
+        &.filled,
+        &.error {
+            border-bottom-color: $accent;
+            box-shadow: 0 1px 0 $accent;
+            outline: none;
+
+            & + .form-label {
+                font-size: .8rem;
+                transform: translateY(-140%);
+            }
+        }
+
+        &.filled.valid:not(:invalid) {
+            border-bottom-color: $green;
+            box-shadow: 0 1px 0 $green;
+        }
+
+        &.error,
+        &.error.filled,
+        &:invalid.filled {
+            & ~ .form-note {
+                opacity: 1;
+            }
+        }
+    }
+
+    select {
+        appearance: none;
+    }
+
+    &-label {
+        position: absolute;
+        top: 1rem;
+        display: block;
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1;
+        //color: $grey;
+        pointer-events: none;
+        cursor: text;
+    }
+
+    &-note {
+        display: block;
+        font-size: .8rem;
+        opacity: 0;
+    }
+
+    &-submit {
+        &-container {
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        &-text {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        &-icon {
+            display: inline-block;
+            margin-left: .5rem;
+            font-size: .8em;
+            vertical-align: middle;
+        }
+    }
+
+    &-disclaimer {
+        font-size: .75rem;
+    }
+
+    &-loader {
+        margin: 2rem 0;
+        //color: $grey;
+        text-align: center;
+
+        &-text {
+            margin-top: 1rem;
+            font-size: .75rem;
+            display: block;
+        }
+    }
+}

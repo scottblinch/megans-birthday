@@ -1,0 +1,209 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  text-align: center;
+  box-sizing: border-box; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+html {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.4; }
+  @media (min-width: 768px) {
+    html {
+      font-size: 21px; } }
+  @media (min-width: 1200px) {
+    html {
+      font-size: 24px; } }
+  @media (min-width: 1600px) {
+    html {
+      font-size: 27px; } }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #2196f3;
+  overflow-x: hidden; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  line-height: 1.2; }
+
+a {
+  color: #2196f3;
+  text-decoration: none; }
+  a:hover, a:focus {
+    text-decoration: underline; }
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical; }
+
+a,
+button,
+.form-control,
+.form-label,
+.form-note {
+  transition: all .3s ease-in-out; }
+
+.button {
+  display: block;
+  margin: 0 auto;
+  padding: 0 2rem;
+  color: #fff;
+  line-height: 2;
+  border: 0;
+  border-radius: 2px;
+  background-color: #ff5252;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
+  .button:hover, .button:focus {
+    background-color: #ff6666;
+    outline: none;
+    text-decoration: none; }
+  .button[disabled] {
+    background-color: #212121 !important; }
+  .button.correct {
+    background-color: #4caf50 !important; }
+  .button + .button {
+    margin-top: 1rem; }
+
+.container {
+  height: 100%;
+  max-width: 35rem;
+  margin: 0 auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  font-size: 0;
+  white-space: nowrap; }
+  .container::before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: ''; }
+
+.form {
+  height: 100%; }
+
+.slide {
+  display: none;
+  font-size: 1rem;
+  vertical-align: middle;
+  white-space: normal; }
+  .slide.active {
+    display: inline-block; }
+
+.fade {
+  opacity: 0;
+  transition: opacity .5s ease-in-out; }
+  .fade.in {
+    opacity: 1; }
+
+.clearfix {
+  *zoom: 1; }
+  .clearfix::before, .clearfix::after {
+    content: " ";
+    display: table; }
+  .clearfix::after {
+    clear: both; }
+
+.form-group {
+  position: relative;
+  text-align: left; }
+  .form-group + .form-group {
+    margin-top: 1rem; }
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  padding: 0;
+  font-size: 1rem;
+  line-height: normal;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+  background: none; }
+  .form-control:focus, .form-control.filled, .form-control.error {
+    border-bottom-color: #ff5252;
+    box-shadow: 0 1px 0 #ff5252;
+    outline: none; }
+    .form-control:focus + .form-label, .form-control.filled + .form-label, .form-control.error + .form-label {
+      font-size: .8rem;
+      transform: translateY(-140%); }
+  .form-control.filled.valid:not(:invalid) {
+    border-bottom-color: #4caf50;
+    box-shadow: 0 1px 0 #4caf50; }
+  .form-control.error ~ .form-note, .form-control.error.filled ~ .form-note, .form-control:invalid.filled ~ .form-note {
+    opacity: 1; }
+
+.form select {
+  appearance: none; }
+
+.form-label {
+  position: absolute;
+  top: 1rem;
+  display: block;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1;
+  pointer-events: none;
+  cursor: text; }
+
+.form-note {
+  display: block;
+  font-size: .8rem;
+  opacity: 0; }
+
+.form-submit-container {
+  margin-top: 1rem;
+  text-align: center; }
+
+.form-submit-text {
+  display: inline-block;
+  vertical-align: middle; }
+
+.form-submit-icon {
+  display: inline-block;
+  margin-left: .5rem;
+  font-size: .8em;
+  vertical-align: middle; }
+
+.form-disclaimer {
+  font-size: .75rem; }
+
+.form-loader {
+  margin: 2rem 0;
+  text-align: center; }
+  .form-loader-text {
+    margin-top: 1rem;
+    font-size: .75rem;
+    display: block; }
+
+/*# sourceMappingURL=../maps/main.css.map */

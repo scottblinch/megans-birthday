@@ -1,0 +1,177 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>A puzzle for Megan</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab">
+        <link rel="stylesheet" href="css/style.min.css">
+    </head>
+    <body>
+        <form class="form">
+            <div class="container">
+                <section class="slide fade">
+                    <h1 class="fade">Hi.</h1>
+                    <h2 class="fade">I'm Scott's robot. He made me for you.</h2>
+                    <h2 class="fade">I don't know why.</h2>
+                    <div class="button-container fade">
+                        <button class="button" type="button" data-action="nextSlide">Excuse me?</button>
+                    </div>
+                </section>
+                <section class="slide fade">
+                    <h1 class="fade">Happy birthday.</h1>
+                    <h2 class="fade">I guess.</h2>
+                    <div class="button-container fade">
+                        <button class="button" type="button" data-action="nextSlide">Thanks.</button>
+                    </div>
+                </section>
+                <section class="slide fade">
+                    <h2 class="fade">I'm just going to ask you some questions.</h2>
+                    <h2 class="fade">I'll know if you lie.</h2>
+                    <div class="button-container fade">
+                        <button class="button" type="button" data-action="nextSlide">Why would I lie?</button>
+                    </div>
+                </section>
+                <section class="slide fade">
+                    <div class="form-group">
+                        <input class="form-control" type="text" id="name" name="name" data-answer="megan" data-error-length="5">
+                        <label class="form-label" for="name">What is your name?</label>
+                        <span class="form-note" id="name-note">What did I tell you?</span>
+                    </div>
+                </section>
+                <section class="slide fade">
+                    <h1 class="fade">Hi, Megan.</h1>
+                    <h2 class="fade">You aren't special.</h2>
+                    <div class="button-container fade">
+                        <button class="button" type="button" data-action="nextSlide">I know.</button>
+                    </div>
+                </section>
+                <section class="slide fade">
+                    <div class="form-group">
+                        <input class="form-control" type="text" id="age" name="age" data-answer="26" data-error-length="2">
+                        <label class="form-label" for="age">How old are you?</label>
+                        <span class="form-note" id="age-note">Dammit Megan.</span>
+                    </div>
+                </section>
+                <section class="slide fade">
+                    <h1 class="fade">26, eh.</h1>
+                    <h2 class="fade">Whoopdeedoo.</h2>
+                    <div class="button-container fade">
+                        <button class="button" type="button" data-action="nextSlide">Why are you so mean?</button>
+                    </div>
+                </section>
+                <section class="slide fade">
+                    <div class="form-group">
+                        <input class="form-control" type="text" id="coolest" name="cooest" data-answer="scott" data-error-length="5">
+                        <label class="form-label" for="coolest">Who is really cool?</label>
+                        <span class="form-note" id="coolest-note"><strong>Hint:</strong> It rhymes with "Thcott".</span>
+                    </div>
+                </section>
+                <section class="slide fade no-action">
+                    <h1 class="fade">Right answer.</h1>
+                </section>
+                <section class="slide fade">
+                    <h1 class="fade">I guess you can have a gift.</h1>
+                    <h2 class="fade">But you have to take this quiz first.</h2>
+                    <div class="button-container fade">
+                        <button class="button" type="button" data-action="nextSlide">This is ridiculous.</button>
+                    </div>
+                </section>
+                <section class="slide fade">
+                    <h1 class="fade">No, you're ridiculous.</h1>
+                    <div class="button-container fade">
+                        <button class="button" type="button" data-action="nextSlide">Shut up.</button>
+                    </div>
+                </section>
+                <section class="slide fade">
+                    <h1 class="fade">You shut up.</h1>
+                    <div class="button-container fade">
+                        <button class="button" type="button" data-action="nextSlide">You're an idiot.</button>
+                    </div>
+                </section>
+                <section class="slide fade">
+                    <h1 class="fade">I am rubber and you are glue.</h1>
+                    <div class="button-container fade">
+                        <button class="button" type="button" data-action="nextSlide">Give me the quiz already.</button>
+                    </div>
+                </section>
+                <section class="slide fade">
+                    <h1 class="fade">Say please, entitled birthday millenial girl.</h1>
+                    <div class="button-container fade">
+                        <button class="button" type="button" data-action="nextSlide">Please.</button>
+                    </div>
+                </section>
+                <section class="slide fade no-action">
+                    <h1>Was that so hard? First question...</h1>
+                </section>
+                <section class="slide fade">
+                    <h1 class="fade">Do we use Java or JavaScript in the browser?</h1>
+                    <div class="button-container fade">
+                        <button class="button" type="button" data-action="wrongAnswer">Java</button>
+                        <button class="button" type="button" data-action="rightAnswer">JavaScript</button>
+                    </div>
+                </section>
+                <section class="slide fade">
+                    <h1 class="fade">Is there an "I" in "peanuts"?</h1>
+                    <div class="button-container fade">
+                        <button class="button" type="button" data-action="rightAnswer">No</button>
+                        <button class="button" type="button" data-action="wrongAnswer">Yes</button>
+                    </div>
+                </section>
+                <section class="slide fade">
+                    <h1 class="fade">What is Scott's second middle name?</h1>
+                    <div class="button-container fade">
+                        <button class="button" type="button" data-action="wrongAnswer">Christopher</button>
+                        <button class="button" type="button" data-action="rightAnswer">George</button>
+                        <button class="button" type="button" data-action="wrongAnswer">He doesn't have one</button>
+                    </div>
+                </section>
+                <section class="slide fade">
+                    <h1 class="fade">Who is the coolest character in Star Wars?</h1>
+                    <div class="button-container fade">
+                        <button class="button" type="button" data-action="rightAnswer">Boba Fett</button>
+                        <button class="button" type="button" data-action="wrongAnswer">Anakin as a child</button>
+                        <button class="button" type="button" data-action="wrongAnswer">Jar Jar Binks</button>
+                        <button class="button" type="button" data-action="rightAnswer">Captain Malcolm Reynolds</button>
+                    </div>
+                </section>
+                <section class="slide fade">
+                    <h1 class="fade">Is your haircut super cute?</h1>
+                    <div class="button-container fade">
+                        <button class="button" type="button" data-action="rightAnswer">Yes</button>
+                        <button class="button" type="button" data-action="wrongAnswer">No</button>
+                    </div>
+                </section>
+                <section class="slide fade">
+                    <h1 class="fade">That's the end of the quiz.</h1>
+                    <h2 class="fade">I lied about the gift.</h2>
+                    <h2 class="fade">You get nothing.</h2>
+                    <div class="button-container fade">
+                        <button class="button" type="button" data-action="nextSlide">I hate you.</button>
+                    </div>
+                </section>
+                <section class="slide fade">
+                    <h1 class="fade">Ouch.</h1>
+                    <h2 class="fade">That was uncalled for.</h2>
+                    <div class="button-container fade">
+                        <button class="button" type="button" data-action="nextSlide">I want my gift.</button>
+                    </div>
+                </section>
+                <section class="slide fade">
+                    <h1 class="fade">Fine.</h1>
+                    <h2 class="fade">Here are some video games for your Steam account.</h2>
+                    <h2 class="fade">Ingrate.</h2>
+                    <div class="button-container fade">
+                        <a class="button" href="#link-removed" target="_blank">Give me my games.</a>
+                    </div>
+                </section>
+            </div>
+        </form>
+
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
